@@ -4,12 +4,12 @@ import BuyCredit from "./pages/BuyCredit";
 import Result from "./pages/Result";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"; 
 
 const App = () => {
   return (
     <div className="min-h-screen bg-slate-50">
-      <Navbar/>
+      <Navbar/> 
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/result" element={<Result/>} />
