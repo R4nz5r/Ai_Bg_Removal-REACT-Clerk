@@ -4,18 +4,21 @@ import BuyCredit from "./pages/BuyCredit";
 import Result from "./pages/Result";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Footer from "./components/Footer"; 
+import Footer from "./components/Footer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
     <div className="min-h-screen bg-slate-50">
-      <Navbar/> 
+      <ToastContainer  position="bottom-right"/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/result" element={<Result/>} />
-        <Route path="/buyCredit" element={<BuyCredit/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/result" element={<Result />} />
+        <Route path="/buy" element={<BuyCredit />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
